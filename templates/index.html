@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>web lights</title>
+		<style>
+			.interItems {
+				text-align: center;
+			}
+			.interactiveButtons {
+				padding: 2em;
+				display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    height: 200px;
+			}
+			.onButton {
+				width: 10em;
+				height: 10em;
+			}
+			.offButton {
+				width: 10em;
+				height: 10em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class='interItems'>
+			<h1>Control an led with an Arduino using Python</h1>
+			<div class='interactiveButtons'>
+				<form action='#' method='POST'>
+					<button class='onButton' onclick="ledOn()" name="on" value="on">on</button>
+					<button class='offButton' onclick="ledOff()" name="off" value="off">off</button> 
+				</form>
+			</div>
+			<button class='disconnectBtton' onclick="disconnect()" name="dis" value="dis">disconnect</button> 
+		</div>
+	</body>
+</html>
